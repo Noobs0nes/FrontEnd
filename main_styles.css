@@ -36,6 +36,7 @@ body{
     position: relative;
     right: 0;
     top:0;
+    width: 25%;
 }
 .headerButtonsR:hover{
     background-color: #3b3186;
@@ -46,12 +47,13 @@ body{
     left: auto;
     right: auto;
     text-align: center;
+    width: 40%;
 }
 
 #intro{
     background-color: #6eee3b;
     color: #290044;
-    font-size: 65px;
-    padding: 20px;
+    font-size: 25px;
+    padding: 10px;
     text-align: center;
 }
