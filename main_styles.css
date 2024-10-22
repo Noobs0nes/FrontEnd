@@ -19,7 +19,7 @@ body{
     overflow: hidden;
 }
 .headerButtonsL {
-    position: fixed;
+    position: relative;
     left: 0;
     top:0;
 }
@@ -27,7 +27,7 @@ body{
     background-color: #3b3186;
 }
 .headerButtonsR {
-    position: fixed;
+    position: relative;
     right: 0;
     top:0;
 }
@@ -35,7 +35,7 @@ body{
     background-color: #3b3186;
 }
 .headerText{
-    position: fixed;
+    position: relative;
     top:0;
     left: auto;
     right: auto;
@@ -46,4 +46,5 @@ body{
     color: #290044;
     font-size: 65px;
     padding: 20px;
+    text-align: center;
 }
