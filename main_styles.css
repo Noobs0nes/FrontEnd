@@ -24,7 +24,7 @@ body{
     clear: both;
 }
 .headerButtonsL {
-    width: 35%;
+    width: 33%;
     float: left;
     height: 50px;
     padding: 12.5px;
@@ -33,7 +33,7 @@ body{
     background-color: #3b3186;
 }
 .headerButtonsR {
-    width: 25%;
+    width: 23%;
     float: left;
     height: 50px;
     padding: 12.5px;
