@@ -62,6 +62,7 @@ p {
     margin-left: 35px;
 }
 .buttons{
+    padding: 25px;
     border: black 5px solid;
     border-radius: 25%;
     background-color: var(--SecundaryColor);
