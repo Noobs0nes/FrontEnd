@@ -18,7 +18,8 @@ body{
     top:0;
     overflow: hidden;
     width: 100%;
-}
+    left: 0;
+    top:0;}
 .header ::after{
     content: "";
     display: table;
@@ -53,14 +54,15 @@ body{
 }
 
 #intro{
+    position: static;
     background-color: var(--SecundaryColor);
     color: var(--MainColor);
     font-size: 25px;
     padding: 10px;
     text-align: center;
     width: 100%;
-
-
+    left: 0;
+    top:0;
 }
 p {
     margin-left: 35px;
