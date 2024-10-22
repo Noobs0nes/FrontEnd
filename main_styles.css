@@ -24,30 +24,23 @@ body{
     clear: both;
 }
 .headerButtonsL {
-    position: relative;
-    left: 0;
-    top:0;
     width: 35%;
+    float: left;
 }
 .headerButtonsL:hover{
     background-color: #3b3186;
 }
 .headerButtonsR {
-    position: relative;
-    right: 0;
-    top:0;
     width: 25%;
+    float: left;
 }
 .headerButtonsR:hover{
     background-color: #3b3186;
 }
 .headerText{
-    position: relative;
-    top:0;
-    left: auto;
-    right: auto;
     text-align: center;
     width: 40%;
+    float: left;
 }
 
 #intro{
