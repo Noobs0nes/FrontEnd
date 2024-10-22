@@ -18,7 +18,7 @@ body{
     top:0;
     overflow: hidden;
 }
-.header::after{
+.header ::after{
     content: "";
     display: table;
     clear: both;
@@ -52,12 +52,31 @@ body{
 }
 
 #intro{
-    background-color: #6eee3b;
-    color: #290044;
+    background-color: var(--SecundaryColor);
+    color: var(--MainColor);
     font-size: 25px;
     padding: 10px;
     text-align: center;
 }
 p {
     margin-left: 35px;
+}
+.buttons{
+    border: black 5px solid;
+    border-radius: 25%;
+    background-color: var(--SecundaryColor);
+    color: var(--MainColor);
+}
+button {
+    font-size: 20px;
+    background-color: var(--MainColor);
+    color: var(--TextPrimary);
+    border: var(--SecundaryColor) 2px solid;
+}
+button :hover {
+    font-size: 21.5px;
+    background-color: var(--SecundaryColor);
+    color: var(--MainColor);
+    border-color: black;
+    box-shadow: black 2px;
 }
