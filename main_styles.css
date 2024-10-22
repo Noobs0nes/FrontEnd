@@ -15,6 +15,7 @@ body{
     height: 75px;
     max-height: 75px;
     position: sticky;
+    top:0;
     overflow: hidden;
 }
 .headerButtonsL {
