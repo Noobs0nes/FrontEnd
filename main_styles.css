@@ -27,6 +27,7 @@ body{
     position: relative;
     left: 0;
     top:0;
+    width: 35%;
 }
 .headerButtonsL:hover{
     background-color: #3b3186;
@@ -44,6 +45,7 @@ body{
     top:0;
     left: auto;
     right: auto;
+    text-align: center;
 }
 
 #intro{
