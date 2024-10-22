@@ -60,7 +60,7 @@ body{
     background-color: var(--SecundaryColor);
     color: var(--MainColor);
     font-size: 25px;
-    padding: 10px;
+    margin-bottom: 20px;
     text-align: center;
     left: 0;
     top:0;
