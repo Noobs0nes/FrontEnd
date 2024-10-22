@@ -45,12 +45,13 @@ body{
     background-color: #3b3186;
 }
 .headerText{
+    display: contents;
     position: absolute;
     left: 0;
     text-align: center;
     width: 100%;
     height: 50px;
-    padding: 0.8%;
+    margin-bottom: 12.5px;
 }
 
 #intro{
@@ -60,7 +61,6 @@ body{
     font-size: 25px;
     padding: 10px;
     text-align: center;
-    width: 100%;
     left: 0;
     top:0;
 }
