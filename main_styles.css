@@ -45,7 +45,6 @@ body{
     background-color: #3b3186;
 }
 .headerText{
-    display: contents;
     position: absolute;
     left: 0;
     text-align: center;
