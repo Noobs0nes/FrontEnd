@@ -26,6 +26,8 @@ body{
 .headerButtonsL {
     width: 35%;
     float: left;
+    height: 50px;
+    padding: 12.5px;
 }
 .headerButtonsL:hover{
     background-color: #3b3186;
@@ -33,6 +35,8 @@ body{
 .headerButtonsR {
     width: 25%;
     float: left;
+    height: 50px;
+    padding: 12.5px;
 }
 .headerButtonsR:hover{
     background-color: #3b3186;
@@ -41,6 +45,8 @@ body{
     text-align: center;
     width: 40%;
     float: left;
+    height: 50px;
+    padding: 12.5px;
 }
 
 #intro{
