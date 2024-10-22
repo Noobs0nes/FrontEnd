@@ -1,10 +1,46 @@
 :root{
-    --MainColor:#290044;
-    --Realce:
+    --MainColor:        #290044;
+    --SecundaryColor:   #6eee3b;
+    --HeaderPrimary:    #4a4383;
+    --TextPrimary:      #effbff;
+    --HeaderText: #fbfffe;
 }
 body{
     background-color: var(--MainColor);
 }
 header {
-    background-color:
+    color: var(--HeaderText);
+    background-color: var(--HeaderPrimary);
+    height: 75px;
+    max-height: 75px;
+    position: sticky;
+}
+.headerButtonsL {
+    position: fixed;
+    left: 0;
+    top:0;
+}
+.headerButtonsL:hover{
+    background-color: #3b3186;
+}
+.headerButtonsR {
+    position: fixed;
+    right: 0;
+    top:0;
+}
+.headerButtonsR:hover{
+    background-color: #3b3186;
+}
+.headerText{
+    position: fixed;
+    top:0;
+    left: auto;
+    right: auto;
+}
+
+#intro{
+    background-color: #6eee3b;
+    color: #290044;
+    font-size: 65px;
+    padding: 20px;
 }
