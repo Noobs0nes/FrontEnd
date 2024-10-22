@@ -18,6 +18,11 @@ body{
     top:0;
     overflow: hidden;
 }
+.header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .headerButtonsL {
     position: relative;
     left: 0;
