@@ -42,9 +42,10 @@ body{
     background-color: #3b3186;
 }
 .headerText{
+    position: relative;
+    left: 0;
     text-align: center;
-    width: 50%;
-    float: left;
+    width: 100%;
     height: 50px;
     padding: 12.5px;
 }
