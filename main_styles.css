@@ -19,7 +19,8 @@ body{
     overflow: hidden;
     width: 100%;
     left: 0;
-    top:0;}
+}
+
 .header ::after{
     content: "";
     display: table;
@@ -59,7 +60,7 @@ body{
     background-color: var(--SecundaryColor);
     color: var(--MainColor);
     font-size: 25px;
-    margin-bottom: 20px;
+    padding: 10px;
     text-align: center;
     left: 0;
     top:0;
