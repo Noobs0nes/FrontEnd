@@ -24,7 +24,8 @@ body{
     clear: both;
 }
 .headerButtonsL {
-    width: 23%;
+    position: relative;
+    width: 50%;
     float: left;
     height: 50px;
     padding: 12.5px;
@@ -33,8 +34,9 @@ body{
     background-color: #3b3186;
 }
 .headerButtonsR {
-    width: 23%;
-    float: left;
+    position: relative;
+    width: 50%;
+    right: 0;
     height: 50px;
     padding: 12.5px;
 }
