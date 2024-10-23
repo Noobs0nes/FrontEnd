@@ -65,7 +65,7 @@ button {
     font-size: 50px;
     background-color: var(--MainColor);
     color: var(--TextPrimary);
-    cursor: po;
+    cursor: pointer;
     border: black 2px solid;
     border-radius: 15px;
     box-shadow: 0 9px #999;
