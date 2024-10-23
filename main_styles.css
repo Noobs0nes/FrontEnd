@@ -20,6 +20,7 @@ body{
     overflow: hidden;
     width: 100%;
     left: 0;
+    z-index: 10;
 }
 
 .header ::after{
