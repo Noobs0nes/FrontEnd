@@ -20,6 +20,7 @@ body{
     overflow: hidden;
     width: 100%;
     left: 0;
+    background-position-y: top;
 }
 
 .header ::after{
