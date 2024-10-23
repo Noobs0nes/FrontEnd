@@ -20,7 +20,6 @@ body{
     overflow: hidden;
     width: 100%;
     left: 0;
-    transform: translateY(5px);
 }
 
 .header ::after{
