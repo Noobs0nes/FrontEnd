@@ -26,25 +26,6 @@ body{
     display: table;
     clear: both;
 }
-.headerButtonsL {
-    width: 20%;
-    float: left;
-    height: 50px;
-    padding: 12.5px;
-}
-.headerButtonsL:hover{
-    background-color: #3b3186;
-}
-.headerButtonsR {
-    margin-left: 56.7382144927%;
-    width: 20%;
-    float: left;
-    height: 50px;
-    padding: 0.8%;
-}
-.headerButtonsR:hover{
-    background-color: #3b3186;
-}
 .headerText{
     position: absolute;
     left: 0;
@@ -69,6 +50,8 @@ p {
     margin-left: 35px;
 }
 .buttons{
+    height: 75px;
+    max-height: 75px;
     padding: 25px;
     border: black 5px solid;
     border-radius: 10px;
@@ -76,15 +59,20 @@ p {
     color: var(--MainColor);
 }
 button {
-    font-size: 20px;
+    margin-left: 8px;
+    font-size: 50px;
     background-color: var(--MainColor);
     color: var(--TextPrimary);
-    border: var(--SecundaryColor) 2px solid;
+    border: black 2px solid;
+    border-bottom-width: 7px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-button:hover {
-    font-size: 21.5px;
+button:active {
+    font-size: 52px;
     background-color: var(--SecundaryColor);
     color: var(--MainColor);
-    border-color: black;
-    box-shadow: black 2px;
+    border-bottom-width: 4px;
+    
+    
 }
