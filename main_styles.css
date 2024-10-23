@@ -6,6 +6,7 @@
     --HeaderText: #fbfffe;
 }
 body{
+    margin-left: 0;
     background-color: var(--MainColor);
     color: var(--TextPrimary);
 }
@@ -63,16 +64,14 @@ button {
     font-size: 50px;
     background-color: var(--MainColor);
     color: var(--TextPrimary);
+    cursor: po;
     border: black 2px solid;
-    border-bottom-width: 7px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 button:active {
-    margin-top: 3px;
-    background-color: var(--SecundaryColor);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
     color: var(--MainColor);
-    border-bottom-width: 4px;
-    
-    
 }

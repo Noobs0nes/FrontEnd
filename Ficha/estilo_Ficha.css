@@ -1,0 +1,23 @@
+:root{
+    --MainColor:        #290044;
+    --SecundaryColor:   #6eee3b;
+    --HeaderPrimary:    #4a4383;
+    --TextPrimary:      #effbff;
+    --HeaderText: #fbfffe;
+}
+body{
+    margin-left: 0;
+    background-color: var(--MainColor);
+    color: var(--TextPrimary);
+}
+.header {
+    color: var(--HeaderText);
+    background-color: var(--HeaderPrimary);
+    height: 75px;
+    max-height: 75px;
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+}
