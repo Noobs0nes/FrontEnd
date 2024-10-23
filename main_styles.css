@@ -69,7 +69,6 @@ button {
     border-bottom-left-radius: 15px;
 }
 button:active {
-    font-size: 52px;
     background-color: var(--SecundaryColor);
     color: var(--MainColor);
     border-bottom-width: 4px;
