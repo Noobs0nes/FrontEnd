@@ -52,7 +52,7 @@ body {
     margin-bottom: 5px;
 }
 
-#informacoes input:first {
+#informacoes input[type=image] {
     border: 0px none transparent;
 }
 
