@@ -29,10 +29,12 @@ body{
 }
 #informacoes{
     width: 15vw;
-    border: black solid 3px;
+    border: #6eee3b solid 3px;
+    padding: 10px;
 }
 #informacoes input{
     background-color: transparent;
     border: 0px;
-    border-bottom: black solid 2px;
+    border-bottom: #6eee3b 2px;
+    display: block;
 }
