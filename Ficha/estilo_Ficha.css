@@ -38,10 +38,8 @@ body{
     color: whitesmoke;
     border-bottom: #6eee3b 2px;
     width: 100%;
+    margin-top: 3px;
 }
-#informacoes input:checked{
-    background-color: transparent;
-}
-input:focus{
+#informacoes input:focus textarea:focus{
     background-color: transparent;
 }
