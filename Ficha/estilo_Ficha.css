@@ -30,9 +30,10 @@ body{
 #informacoes{
     width: 15vw;
     border: #6eee3b solid 3px;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 10px;
     float: left;
+    min-width: 200px;
 }
 #informacoes input{
     background-color: transparent;
@@ -40,8 +41,11 @@ body{
     color: whitesmoke;
     border-bottom: #6eee3b 2px;
     border-style: dashed;
-    width: 100%;
+    width: 80%;
     margin-bottom: 5px;
+}
+#informacoes input:first{
+    border:0px none transparent;
 }
 #informacoes input:valid{
     background-color: transparent;
@@ -49,8 +53,17 @@ body{
 }
 #inventario{
     border: #6eee3b solid 3px;
-    border-radius: 25px;
+    border-radius: 5px;
     height: 280px;
     width: 30vw;
     float: left;
+    overflow: hidden;
+}
+#money{
+    position: relative;
+    right: 0;
+    float: right;
+    border: #4a4383 2px dotted;
+    height: 100px;
+    width: 50%;
 }
