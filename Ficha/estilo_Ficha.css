@@ -35,10 +35,13 @@ body{
 #informacoes input{
     background-color: transparent;
     border: 0px;
-    color: #4a4383;
+    color: whitesmoke;
     border-bottom: #6eee3b 2px;
     width: 100%;
 }
 #informacoes input:checked{
+    background-color: transparent;
+}
+input:enabled{
     background-color: transparent;
 }
