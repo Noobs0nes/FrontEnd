@@ -1,33 +1,37 @@
-:root{
-    --MainColor:        #290044;
-    --SecundaryColor:   #6eee3b;
-    --HeaderPrimary:    #4a4383;
-    --TextPrimary:      #effbff;
+:root {
+    --MainColor: #290044;
+    --SecundaryColor: #6eee3b;
+    --HeaderPrimary: #4a4383;
+    --TextPrimary: #effbff;
     --HeaderText: #fbfffe;
 }
-body{
+
+body {
     background-color: var(--MainColor);
     color: var(--TextPrimary);
 }
+
 .header {
     color: var(--HeaderText);
     background-color: var(--HeaderPrimary);
     height: 75px;
     max-height: 75px;
     position: sticky;
-    top:0;
+    top: 0;
     overflow: hidden;
     width: 100%;
     margin-left: 0;
     margin-top: 0;
 }
-.titulo{
+
+.titulo {
     text-align: center;
     font-size: 58px;
     font-weight: 800;
     padding: 10px;
 }
-#informacoes{
+
+#informacoes {
     width: 15vw;
     border: #6eee3b solid 3px;
     border-radius: 5px;
@@ -35,7 +39,8 @@ body{
     float: left;
     min-width: 200px;
 }
-#informacoes input{
+
+#informacoes input {
     background-color: transparent;
     border: 0px;
     color: whitesmoke;
@@ -44,14 +49,17 @@ body{
     width: 80%;
     margin-bottom: 5px;
 }
-#informacoes input:first{
-    border:0px none transparent;
+
+#informacoes input:first {
+    border: 0px none transparent;
 }
-#informacoes input:valid{
+
+#informacoes input:valid {
     background-color: transparent;
-    color:whitesmoke;
+    color: whitesmoke;
 }
-#inventario{
+
+#inventario {
     border: #6eee3b solid 3px;
     border-radius: 5px;
     height: 280px;
@@ -59,11 +67,28 @@ body{
     float: left;
     overflow: hidden;
 }
-#money{
+
+#money {
     position: relative;
-    right: 0;
+    right: -1;
     float: right;
     border: #4a4383 2px dotted;
-    height: 100px;
+    height: 135px;
     width: 50%;
+    padding: 15px;
+}
+
+#money input {
+    background-color: transparent;
+    border: 0px;
+    color: whitesmoke;
+    border-bottom: #6eee3b 2px;
+    border-style: dashed;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#money input:valid {
+    background-color: transparent;
+    color: whitesmoke;
 }
