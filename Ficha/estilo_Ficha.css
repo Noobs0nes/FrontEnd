@@ -38,3 +38,6 @@ body{
     border-bottom: #6eee3b 2px;
     display: block;
 }
+#informacoes input::slotted{
+    background-color: transparent;
+}
