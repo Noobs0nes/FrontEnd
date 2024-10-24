@@ -38,8 +38,9 @@ body{
     color: whitesmoke;
     border-bottom: #6eee3b 2px;
     width: 100%;
-    margin-top: 3px;
+    margin-bottom: 5px;
 }
-#informacoes input:focus textarea:focus{
+#informacoes input:valid{
     background-color: transparent;
+    color:whitesmoke;
 }
