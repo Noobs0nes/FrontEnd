@@ -77,7 +77,8 @@ body {
     border: #4a4383 2px dotted;
     height: 120px;
     width: 120px;
-    padding: 15px;
+    padding: 5px;
+    padding-left: 10px;
 }
 
 #money input {
@@ -86,7 +87,7 @@ body {
     color: whitesmoke;
     border-bottom: #6eee3b 0.5px;
     border-style: dashed;
-    width: 10%;
+    width: 33px;
     margin-bottom: 5px;
 }
 
