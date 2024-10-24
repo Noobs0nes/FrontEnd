@@ -82,9 +82,9 @@ body {
     background-color: transparent;
     border: 0px;
     color: whitesmoke;
-    border-bottom: #6eee3b 2px;
+    border-bottom: #6eee3b 0.5px;
     border-style: dashed;
-    width: 80%;
+    width: 10%;
     margin-bottom: 5px;
 }
 
