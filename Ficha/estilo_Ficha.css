@@ -21,3 +21,9 @@ body{
     width: 100%;
     left: 0;
 }
+.titulo{
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    padding: 10px;
+}
