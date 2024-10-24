@@ -37,6 +37,7 @@ body{
     border: 0px;
     color: whitesmoke;
     border-bottom: #6eee3b 2px;
+    border-style: dashed;
     width: 100%;
     margin-bottom: 5px;
 }
