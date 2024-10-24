@@ -42,6 +42,6 @@ body{
 #informacoes input:checked{
     background-color: transparent;
 }
-input:enabled{
+input:focus{
     background-color: transparent;
 }
