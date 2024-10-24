@@ -25,10 +25,12 @@ body {
 }
 
 .titulo {
-    text-align: center;
+    text-align: right;
     font-size: 58px;
     font-weight: 800;
     padding: 10px;
+    width: 51vw;
+    display: inline-block;
 }
 
 #informacoes {
@@ -73,8 +75,8 @@ body {
     right: -1;
     float: right;
     border: #4a4383 2px dotted;
-    height: 135px;
-    width: 50%;
+    height: 120px;
+    width: 120px;
     padding: 15px;
 }
 
