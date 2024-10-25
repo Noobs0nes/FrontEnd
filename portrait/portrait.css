@@ -41,16 +41,21 @@ input[type=number] {
 #foto-personagem{
     position: absolute;
     z-index: 1;
-    top:0;
-    left:0;
-    width: 75px;
-    height: 75px;
+    top:41px;
+    left:34px;
+    width: 95px;
+    height: 132px;
     border-radius: 100%;
     overflow: hidden;
+}
+#foto-personagem img{
+    width: 130%;
+    height: 100%;
 }
 #molduraCompleta{
     width: 350px;
     height: 150px;
+    overflow: hidden;
 }
 #moldura{
     position: absolute;
