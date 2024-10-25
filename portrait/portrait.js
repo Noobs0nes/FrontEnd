@@ -5,8 +5,8 @@ const inputVida = {
 };
 
 inputVida.atual.onchange = () => {
-    let vidaAtual = inputVida.atual.innerText;
-    let vidaTotal = inputVida.total.innerText;
+    let vidaAtual = inputVida.atual.value;
+    let vidaTotal = inputVida.total.value;
     let value = (Number(vidaAtual)/Number(vidaTotal))*100;
     let percent = value +'%';
     inputVida.barra.setProperty('--VIDA-ATUAL-PERCENT', percent)
