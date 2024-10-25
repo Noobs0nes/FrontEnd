@@ -4,10 +4,10 @@ const inputVida = {
     "barra": document.documentElement.style
 };
 
-inputVida.atual.onpointerout = () => {
+inputVida.atual.onchange = () => {
     let vidaAtual = inputVida.atual.textContent;
     let vidaTotal = inputVida.total.textContent;
-    let value = vidaAtual/vidaTotal*100;
+    let value = (Number(vidaAtual)/Number(vidaTotal))*100;
     let percent = value +'%';
     inputVida.barra.setProperty('--VIDA-ATUAL-PERCENT', percent)
 }
