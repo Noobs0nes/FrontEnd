@@ -23,7 +23,7 @@ input:valid {
 a {
     font-size: 25px;
     font-weight: 900;
-    color: black;
+    color: darkgoldenrod;
 }
 
 input::-webkit-inner-spin-button,
@@ -46,7 +46,7 @@ input[type=number] {
 }
 
 #foto-personagem {
-    position: 'absolute';
+    position: absolute;
     z-index: 2;
     top: 39px;
     left: 18px;
@@ -82,13 +82,31 @@ input[type=number] {
 }
 
 #vidaNumerica {
-    position: relative;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
     text-align: center;
     z-index: 6;
 }
+#dynamicBar{
+    position: absolute;
+    left: 110px;
+    top: 132px;
+    width: 271px;
+}
+#barraDeVidaAtual{
+    width: 100%;
+}
+#barraDeVidaAtual img{
+    width: 271px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transform: rotateZ(180deg);
+    z-index: 1;
+}
+
 #nome{
     position: absolute;
     top: 75px;
