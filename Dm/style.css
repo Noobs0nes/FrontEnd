@@ -16,3 +16,6 @@ input[type=number] {
   -moz-appearance: textfield;
   appearance: texfield;
 }
+#vidaDinamicas{
+  border: 2px solid black;
+}
