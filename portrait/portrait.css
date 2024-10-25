@@ -46,12 +46,12 @@ input[type=number] {
 }
 
 #foto-personagem {
-    position: absolute;
+    position: 'absolute';
     z-index: 2;
-    top: 41px;
-    left: 34px;
-    width: 95px;
-    height: 132px;
+    top: 39px;
+    left: 18px;
+    width: 128px;
+    height: 135px;
     border-radius: 100%;
     overflow: hidden;
 }
@@ -78,12 +78,21 @@ input[type=number] {
     z-index: 0;
     top: 0px;
     left: 0px;
+    width: fit-content;
 }
 
 #vidaNumerica {
     position: relative;
     top: 0;
     left: 0;
+    width: 100%;
     text-align: center;
     z-index: 6;
+}
+#nome{
+    position: absolute;
+    top: 75px;
+    left:150px;
+    font-size: 30px;
+    color:goldenrod;
 }
