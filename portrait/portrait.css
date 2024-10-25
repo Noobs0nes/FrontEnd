@@ -1,3 +1,7 @@
+:root {
+    --VIDA-ATUAL-PERCENT: 100%;
+}
+
 body {
     background-color: transparent;
     color: goldenrod;
@@ -35,7 +39,6 @@ input::-webkit-outer-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
-    appearance: texfield;
 }
 
 #fundoMoldura {
@@ -82,23 +85,26 @@ input[type=number] {
 }
 
 #vidaNumerica {
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 6;
+    position: absolute;
+    top: 141px;
+    left: 183px;
+    width: 135px;
+    z-index: 10;
 }
-#dynamicBar{
+
+#dynamicBar {
     position: absolute;
     left: 110px;
     top: 132px;
     width: 271px;
 }
-#barraDeVidaAtual{
-    width: 100%;
+
+#barraDeVidaAtual {
+    width: var(--VIDA-ATUAL-PERCENT);
+    overflow: hidden;
 }
-#barraDeVidaAtual img{
+
+#barraDeVidaAtual img {
     width: 271px;
     position: relative;
     left: 0px;
@@ -107,10 +113,14 @@ input[type=number] {
     z-index: 1;
 }
 
-#nome{
+#nome {
     position: absolute;
-    top: 75px;
-    left:150px;
+    top: 91px;
+    left: 186px;
     font-size: 30px;
-    color:goldenrod;
+    color: goldenrod;
+}
+
+#vidaAtual {
+    text-align: right;
 }
