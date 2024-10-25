@@ -4,7 +4,7 @@ const inputVida = {
     "barra": document.documentElement.style
 };
 
-inputVida.atual.oninput = () => {
+inputVida.atual.onpointerout = () => {
     let vidaAtual = inputVida.atual.textContent;
     let vidaTotal = inputVida.total.textContent;
     let value = vidaAtual/vidaTotal*100;
