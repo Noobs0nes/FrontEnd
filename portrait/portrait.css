@@ -88,14 +88,14 @@ input[type=number] {
     position: absolute;
     top: 141px;
     left: 183px;
-    width: 135px;
+    width: 150px;
     z-index: 10;
 }
 
 #dynamicBar {
     position: absolute;
     left: 110px;
-    top: 132px;
+    top: 135px;
     width: 271px;
 }
 
