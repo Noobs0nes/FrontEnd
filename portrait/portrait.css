@@ -77,9 +77,12 @@ input[type=number] {
     left: 0;
 }
 
+#barraDeVida img{
+    z-index: 0;
+}
+
 #barraDeVida {
     position: absolute;
-    z-index: 0;
     top: 0px;
     left: 0px;
     width: fit-content;
@@ -143,4 +146,8 @@ input[type=number] {
     left: 0px;
     top: 0px;
     z-index: 2;
+}
+
+.z-top{
+    z-index: 8;
 }
