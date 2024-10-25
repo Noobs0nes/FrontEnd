@@ -1,0 +1,48 @@
+body {
+    background-color: transparent;
+    color: goldenrod;
+}
+
+input {
+    border: 0 none transparent;
+    font-size: 25px;
+    background-color: transparent;
+    color: goldenrod;
+}
+
+input:valid {
+    background-color: transparent;
+    color: goldenrod;
+}
+
+a {
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: texfield;
+}
+#fundoMoldura{
+    position: absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+}
+#foto-personagem{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    border-radius: 100%;
+    overflow: hidden;
+}
