@@ -44,10 +44,17 @@ input[type=number] {
     top:0;
     left:0;
     width: 75px;
+    height: 75px;
     border-radius: 100%;
     overflow: hidden;
 }
 #molduraCompleta{
     width: 350px;
     height: 150px;
+}
+#moldura{
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:0;
 }
