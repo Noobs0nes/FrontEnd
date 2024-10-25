@@ -98,9 +98,9 @@ input[type=number] {
 
 #dynamicBar {
     position: absolute;
-    left: 120px;
-    top: 135px;
-    width: 261px;
+    left: 110px;
+    top: 136px;
+    width: 271px;
 }
 
 #barraDeVidaAtual {
@@ -137,7 +137,7 @@ input[type=number] {
     width: var(--VIDA-EXTRA-PERCENT);
     overflow: hidden;
     transition: 1s;
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(180deg);
 }
 
 #barraDeVidaExtra img {
