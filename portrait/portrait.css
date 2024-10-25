@@ -10,6 +10,10 @@ input {
     color: goldenrod;
 }
 
+input:active {
+    border: 0 none transparent;
+}
+
 input:valid {
     background-color: transparent;
     color: goldenrod;
@@ -32,40 +36,52 @@ input[type=number] {
     -moz-appearance: textfield;
     appearance: texfield;
 }
-#fundoMoldura{
+
+#fundoMoldura {
     position: absolute;
     z-index: 1;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-#foto-personagem{
+
+#foto-personagem {
     position: absolute;
     z-index: 2;
-    top:41px;
-    left:34px;
+    top: 41px;
+    left: 34px;
     width: 95px;
     height: 132px;
     border-radius: 100%;
     overflow: hidden;
 }
-#foto-personagem img{
-    width: 100%;
+
+#foto-personagem img {
     height: 100%;
 }
-#molduraCompleta{
+
+#molduraCompleta {
     width: 350px;
     height: 150px;
-    overflow:visible;
+    overflow: visible;
 }
-#moldura{
+
+#moldura {
     position: absolute;
     z-index: 5;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
-#barraDeVida{
+
+#barraDeVida {
     position: absolute;
     z-index: 0;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
+}
+
+#vidaNumerica {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
