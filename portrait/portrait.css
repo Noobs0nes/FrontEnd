@@ -1,5 +1,6 @@
 :root {
     --VIDA-ATUAL-PERCENT: 100%;
+    --VIDA-EXTRA-PERCENT: 0%;
 }
 
 body {
@@ -124,4 +125,22 @@ input[type=number] {
 
 #vidaAtual {
     text-align: right;
+}
+
+#barraDeVidaExtra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--VIDA-EXTRA-PERCENT);
+    overflow: hidden;
+    transition: 1s;
+    filter: hue-rotate(90deg);
+}
+
+#barraDeVidaExtra img {
+    width: 271px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
 }
