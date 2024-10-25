@@ -43,6 +43,11 @@ input[type=number] {
     z-index: 1;
     top:0;
     left:0;
+    width: 75px;
     border-radius: 100%;
     overflow: hidden;
+}
+#molduraCompleta{
+    width: 350px;
+    height: 150px;
 }
