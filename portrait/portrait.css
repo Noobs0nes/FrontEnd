@@ -94,14 +94,15 @@ input[type=number] {
 
 #dynamicBar {
     position: absolute;
-    left: 110px;
+    left: 120px;
     top: 135px;
-    width: 271px;
+    width: 261px;
 }
 
 #barraDeVidaAtual {
     width: var(--VIDA-ATUAL-PERCENT);
     overflow: hidden;
+    transition: 1s;
 }
 
 #barraDeVidaAtual img {
