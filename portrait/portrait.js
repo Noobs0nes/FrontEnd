@@ -9,7 +9,7 @@ inputVida.atual.onchange = () => {
     let vidaTotal = inputVida.total.value;
     let value = (Number(vidaAtual)/Number(vidaTotal))*100;
     let valueExtra = (value-100);
-    switch(valueExtra){
+    switch(value){
         case '<0':
             value = 0;
             break
