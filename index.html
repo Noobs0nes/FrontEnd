@@ -2,75 +2,103 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta lang="PT-BR">
-    <meta title="Introdução">
-    <link rel="stylesheet" href="main_styles.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
-<div id="intro">
-    <h1>Bem vindos a sua ficha de D&D Dinamica!</h1>
-</div>
-<div class="header">
-    <div class="headerText">
-        <a>INTRODUÇÃO!</a>
-    </div>
-</div>
 
 <body>
+    <div id="app">
+        <div>
+            <el-form v-loading="submitting" ref="formRef" :model="form" label-width="180px" v-if="formDataFromSS!=null">
+                <el-form-item label="Date">
+                    <el-date-picker type="date" placeholder="Pick a date" v-model="form.date"></el-date-picker>
+                </el-form-item>
+                <el-form-item label="Amount">
+                    <el-input-number v-model="form.amount" :min="0">
+                        <template slot="prepend">$</template>
+                    </el-input-number>
+                </el-form-item>
+                <el-form-item label="Expense Category">
+                    <el-select v-model="form.category" placeholder="please select your zone">
+                        <el-option v-for="(k,i) in formDataFromSS.ExpenseCategories" :key="k" :label="k" :value="k">
+                        </el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="Description">
+                    <el-input v-model="form.description" type="textarea" />
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" @click="onSubmit">Submit</el-button>
+                    <el-button @click="this.form = this.intitalForm">Cancel</el-button>
+                </el-form-item>
 
-    <br>
-    <br>
-    <div class="conteudo">
-        <p>Este é o projeto de que tanto falei para vocês!</p>
-        <p>Abaixo teremos alguns botões.</p>
-        <p>Como este é apenas um projeto inicial,</p>
-        <p>Cada um deles levara vocês as suas fichas</p>
-        <h2>Sem espiar a ficha do amiguinho!</h2>
-        <img src="" alt="To te olhando" style="align-content: center;">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="buttons">
-            <button onclick="document.location = './Ficha/template.html'">Buck!</button>
-            <button onclick="document.location = '/mello'">Mello!</button>
-            <button onclick="document.location = '/eliot'">Eliot!</button>
-            <button onclick="document.location = '/henry'">Henry!</button>
-            <button onclick="document.location = '/hercule'">Hercule!</button>
-            <button onclick="document.location = '/klaws'">Klaws!</button>
+            </el-form>
+            <el-skeleton :rows="6" animated v-else />
         </div>
-        <button hidden="true" onclick="document.location = '/'">DM SCREEN</button>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
-        <p>Heh.</p>
     </div>
-
 </body>
+
+<script src="https://script.google.com/macros/s/AKfycbzBNffm6Kv5DsfB6PkdJ3TRSqRIiukWSFdKNzWl-U8mROzf9AJ92sX1RPaaHJz8ejvd/exec"></script>
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="//unpkg.com/element-ui/lib/umd/locale/en.js"></script>
+
+<script>
+    ELEMENT.locale(ELEMENT.lang.en)
+</script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                RECORD_SHEET_NAME: 'Expenses',
+                DROPDOWN_SHEET_NAME: 'Dropdown',
+                submitting: false,
+                form: {
+                    date: new Date(),
+                    amount: 0,
+                    category: '',
+                    description: ''
+                },
+                intitalForm: null,
+                requiredfields: ['date', 'amount', 'category', 'description'],
+                formDataFromSS: null,
+                spreadsheetName: 'Dropdowns',
+            };
+        },
+        mounted() {
+            this.getDropdownData();
+            this.intitalForm = JSON.parse(JSON.stringify(this.form));
+        },
+        methods: {
+            onSubmit() {
+                this.submitting = true;
+                if (this.requiredfields.some((field) => this.form[field] === '' || this.form[field] === null || this.form[field].length === 0)) {
+                    this.$message.error('Please fill all required the fields');
+                    this.submitting = false;
+                    return;
+                }
+
+                google.script.run.withSuccessHandler((res) => {
+                    this.submitting = false;
+                    this.$message.success('Form submitted successfully');
+                    this.form = this.intitalForm;
+
+                }).withFailureHandler((error) => {
+                    console.log(error);
+                    this.submitting = false;
+                    this.$message.error('Error submitting form');
+
+                }).addRow(JSON.stringify(Object.entries(this.form)), this.RECORD_SHEET_NAME);
+
+            },
+            getDropdownData() {
+                google.script.run.withSuccessHandler((data) => {
+                    this.formDataFromSS = data;
+                }).getDropdownData(this.DROPDOWN_SHEET_NAME);
+            },
+        }
+    })
+</script>
 
 </html>
