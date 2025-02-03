@@ -79,17 +79,7 @@
                     return;
                 }
 
-                google.script.run.withSuccessHandler((res) => {
-                    this.submitting = false;
-                    this.$message.success('Form submitted successfully');
-                    this.form = this.intitalForm;
-
-                }).withFailureHandler((error) => {
-                    console.log(error);
-                    this.submitting = false;
-                    this.$message.error('Error submitting form');
-
-                }).addRow(JSON.stringify(Object.entries(this.form)), this.RECORD_SHEET_NAME);
+                addRow(JSON.stringify(Object.entries(this.form)), this.RECORD_SHEET_NAME);
 
             },
             getDropdownData() {
